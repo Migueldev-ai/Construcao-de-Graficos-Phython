@@ -44,6 +44,12 @@ plt.xlabel('Quantidade Total de Vendas', fontsize=14)
 plt.ylabel('Marca', fontsize=14)
 plt.grid(True)
 
+# Mapa de calor de correlação entre as variáveis
+df_corr = df[['Nota_MinMax', 'N_Avaliações', 'Preço', 'Marca_Cod', 'Material_Cod', 'Qtd_Vendidos_Cod']].corr()
+plt.figure(figsize=(10, 10))
+sns.heatmap(df_corr, annot=True, fmt=".2f")
+plt.title('Mapa de Calor da Correlação entre Variáveis')
+plt.show()
 
 # Mapa de Calor - Correlação Material e Vendas, não há uma correlação relevante
 df_renomeado = df.rename(columns={'Material_Cod': 'Material.', 'Qtd_Vendidos_Cod': 'Vendas.'})
