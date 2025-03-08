@@ -1,4 +1,4 @@
-# Visualização_de_dados
+# Gráficos Python
  Manipulação de dados para construção de gráficos com Python
 
 Coloque o arquivo 'ecommerce_estatistica.csv' na mesma pasta que 'graficos.py', após isso estará pronto para ser executado no interpretador, gráficos referentes aos dados serão exibidos. 
